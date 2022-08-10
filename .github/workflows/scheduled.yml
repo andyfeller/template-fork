@@ -1,0 +1,10 @@
+on:
+  schedule:
+    - cron: '*/5 * * * 1-5'
+
+jobs:
+  test_schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simple test
+        run: echo "Doing nothing significant but running a scheduled workflow"
